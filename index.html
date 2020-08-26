@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formular Validering</title>
+    <link rel="stylesheet" href="./layout.css">
+</head>
+<body>
+
+
+    
+    <form method="POST" action="login.php"><!-- kan bruges til at styre hvad der skal sendes afsted, og action er hvor det skal modtages. Når vi har Fetch-metoden behøves method og action ikke stå her.-->
+    
+    <header>
+        <h1>Opret bruger</h1>
+    </header>
+
+    <main>
+        <form novalidate>
+        <fieldset class="userinfo"> 
+        <div class="inputGroup">
+            <label for="firstname">Fornavn</label>
+            <input type="text" name="firstname" id="firstname" placeholder="Dit fornavn" required>
+            <span class="statusMessage firstname"></span>
+
+
+            <label for="lastname">Efternavn</label>
+            <input type="text" name="lastname" id="lastname" placeholder="Dit efternavn" required>
+            <span class="statusMessage lastname"></span>
+        </div>
+        
+        <div class="inputGroup">
+            <label for="streetname">Vejnavn</label>
+            <input type="text" name="streetname" id="streetname" placeholder="Vejnavn" required>
+            <span class="statusMessage streetname"></span>
+            
+            <label for="streetnumber">Hus Nummer</label>
+            <input type="number" name="streetnumber" id="streetnumber" placeholder="Hus nr." required>
+            <span class="statusMessage streetnumber"></span>
+            
+            <select name="contry" id="contry" required>
+                <option value="Denmark">Danmark</option>
+                <option value="Sweeden">Sweeden</option>
+                <option value="Germany">Germany</option>
+            </select>
+        <span class="statusMessage adress"></span>
+    </div>   
+    
+    <div class="inputGroup">
+        <label for="username">Brugernavn</label>
+        <input type="text" name="username" id="username" placeholder="Vælg dit brugernavn">
+        <span class="statusMessage username"></span>
+    </div>
+    
+    <div class="inputGroup">
+        <label for="password">Adgangskode</label>
+        <input type="password" name="passwprd" id="password" placeholder="Vælg din adgangskode" required>
+        <span class="statusMessage password"></span>
+    </div>
+    
+    
+    <div class="inputGroup">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Din Email" required>
+        <span class="statusMessage email"></span>
+    </div>
+    <button type="reset">Slet alt</button>
+    <button type="submit">Log ind</button>
+</form>
+</fieldset>
+</main>
+
+
+
+<script src="./javaScript.js"></script>
+</body>
+</html>

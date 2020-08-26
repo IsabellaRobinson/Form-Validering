@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+
+/* #region body */
+*{
+    padding: 0;
+    display: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* #endregion body */
+
+
+/* #region main */
+
+header {
+    text-align: center;
+}
+
+fieldset {
+    border: 2px solid rgba(0, 0, 0, 0.301);
+    background: whitesmoke;
+}
+
+
+/* #endregion main */
+
+
+/* #region div inputGroup */
+.inputGroup {
+    padding: 10px;
+    padding-left: 50px;
+}
+
+/* #endregion div inputGroup */
+
+
+/* #region labels */
+input {
+    width: auto;
+    height: auto;
+}
+
+ label {
+    padding: 7px;
+    display: flex;
+}
+
+input:focus {
+    border: 2px solid #555;
+}
+
+select {
+    border-radius: 4px;
+    margin-left: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+button {
+margin: 10%;
+}
+
+
+/* SUBMIT OG RESET KNAPPER */
+button[type=submit] {
+    background: rgba(34, 179, 34, 0.521);
+    width: 8em;
+    height: 5em;
+    border-radius: 10%;
+}
+
+button[type=submit]:hover {
+    background: rgba(34, 179, 34, 0.753);
+}
+
+
+button[type=reset]{
+    background: rgba(219, 41, 41, 0.521);
+    width: 8em;
+    height: 5em;
+    border-radius: 10%; 
+}
+
+button[type=reset]:hover{
+    background: rgba(216, 10, 10, 0.664);
+}
+/* #endregion labels */
